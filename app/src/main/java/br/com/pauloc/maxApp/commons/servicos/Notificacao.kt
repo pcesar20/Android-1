@@ -10,11 +10,8 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.UI.SplashScreenActivity
+class Notificacao{
 
-/* Adaptado por Maurício Benigno -  Solução proposta por Kyle Jablonski
-* Em: https://www.raywenderlich.com/1214490-android-notifications-tutorial-getting-started*/
-
-class Notification{
     fun createChannel(context: Context, importance: Int, showBadge: Boolean, name: String, description: String) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channelId = "${context.packageName}-$name"
@@ -27,11 +24,8 @@ class Notification{
     }
 
     fun createNotification(context: Context, title: String, message: String, autoCancel: Boolean){
-
-        /* Criando canal de notificações*/
         this.createChannel(context, NotificationManagerCompat.IMPORTANCE_DEFAULT, false,
             context.getString(R.string.app_name), "MaxAppChannel")
-        /* Criando notificação*/
         val channelId = "${context.packageName}-${context.getString(R.string.app_name)}"
         val notificationBuilder = NotificationCompat.Builder(context, channelId).apply{
             setSmallIcon(R.drawable.maxima_logotipo)

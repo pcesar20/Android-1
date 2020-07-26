@@ -7,7 +7,7 @@ import android.net.NetworkInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.pauloc.maxApp.R
-import br.com.pauloc.maxApp.commons.servicos.Notification
+import br.com.pauloc.maxApp.commons.servicos.Notificacao
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -23,18 +23,18 @@ class MainActivity : AppCompatActivity() {
             this.startActivity(intent)
         }
         verificarInternet(this)
-        stopService(Intent(this,Notification::class.java))
+        stopService(Intent(this,Notificacao::class.java))
     }
 
     override fun onResume() {
         super.onResume()
         verificarInternet(this)
-        stopService(Intent(this,Notification::class.java))
+        stopService(Intent(this,Notificacao::class.java))
     }
 
     override fun onStop() {
         super.onStop()
-        startService(Intent(this,Notification::class.java))
+        startService(Intent(this,Notificacao::class.java))
     }
 
     fun verificarInternet(context: Context){

@@ -1,4 +1,4 @@
-package br.com.pauloc.maxApp.commons.servicos;
+package br.com.pauloc.maxapp.commons.servicos;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
@@ -7,16 +7,9 @@ import android.util.Log;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/* Adaptado por Mauricio Benigno,
- Obs: Não está funcionando bem, o SO mata o serviço quase um minuto após sua inicialização.
- Também foi feito uma tentativa de usar Broadcast para tentar executar a tarefa ou reiniciar
- o serviço, mas ambas sem sucesso. Não consegui identificar o motivo para que o app não captasse
- o broadcast.
+import br.com.pauloc.maxApp.commons.servicos.Notificacao;
 
- Solução abaixo proposta por Smita Kapse
- * em https://www.tutorialspoint.com/send-a-notification-when-the-android-app-is-closed*/
-
-public class NotificationService extends Service {
+public class NotificacaoService extends Service {
     Timer timer ;
     TimerTask timerTask ;
     String TAG = "Timers" ;
@@ -59,7 +52,7 @@ public class NotificationService extends Service {
             public void run(){
                 handler .post(new Runnable(){
                     public void run(){
-                        Notification notification = new Notification();
+                        Notificacao notification = new Notificacao();
                         notification.createNotification( getApplicationContext(),"Volte para o MaxApp","Toque para abrir",true);
                     }
                 }) ;
