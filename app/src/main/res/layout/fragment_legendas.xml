@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/santral_regular"
+            android:text="@string/txt_status_pedido_erp"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelTituloLegendas" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus9"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus8">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_em_orcamento"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="O"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus8"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus7">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_cancelado"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="C"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus7"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus6">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_faturado"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="F"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus6"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus5">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_montado"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="M"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus5"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus4">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_liberado"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="L"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus3">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_bloqueado"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/txt_letra_teste"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus2">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_pendente"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="P"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgStatus1">
+
+                <TextView
+                    android:id="@+id/txtStatusLetra2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cor_status_recusado"
+                    android:gravity="center"
+                    android:text="!"
+                    android:textColor="@color/cor_txt_bar_ativo"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgStatus1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#95989A"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/txtStatusLetra1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/cor_status_em_processamento"
+                    android:contentDescription="@string/txt_img_iconlegenda"
+                    android:src="@drawable/ic_maxima_em_processamento"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtStatus9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_orcamento"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus9"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus9"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus9" />
+
+            <TextView
+                android:id="@+id/txtStatus8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_cancelado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus8"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus8"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus8" />
+
+            <TextView
+                android:id="@+id/txtStatus7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_faturado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus7"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus7"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus7" />
+
+            <TextView
+                android:id="@+id/txtStatus6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_montado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus6"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus6"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus6" />
+
+            <TextView
+                android:id="@+id/txtStatus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_liberado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus5"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus5"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus5" />
+
+            <TextView
+                android:id="@+id/txtStatus4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_bloqueado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus4"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus4"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus4" />
+
+            <TextView
+                android:id="@+id/txtStatus3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_posicao_pendente"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus3"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus3"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus3" />
+
+            <TextView
+                android:id="@+id/txtStatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_recusado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus2"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus2"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus2" />
+
+            <TextView
+                android:id="@+id/txtStatus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_processamento"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgStatus1"
+                app:layout_constraintStart_toEndOf="@+id/imgStatus1"
+                app:layout_constraintTop_toTopOf="@+id/imgStatus1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/santral_regular"
+            android:text="@string/label_legenda_critica"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStatus" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutCritica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+            <ImageView
+                android:id="@+id/imgCritica4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_legenda_cancelamento"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCritica3" />
+                <!-- Por conta da falta do icone, coloquei o de
+                cancelamento no lugar-->
+
+
+            <ImageView
+                android:id="@+id/imgCritica3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_critica_alerta"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCritica2" />
+
+            <ImageView
+                android:id="@+id/imgCritica2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_critica_sucesso"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCritica1" />
+
+            <ImageView
+                android:id="@+id/imgCritica1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_aguardando_critica"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCritica4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_falhatotal"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCritica4"
+                app:layout_constraintStart_toEndOf="@+id/imgCritica4"
+                app:layout_constraintTop_toTopOf="@+id/imgCritica4" />
+
+            <TextView
+                android:id="@+id/txtCritica3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_falha_parcial"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCritica3"
+                app:layout_constraintStart_toEndOf="@+id/imgCritica3"
+                app:layout_constraintTop_toTopOf="@+id/imgCritica3" />
+
+            <TextView
+                android:id="@+id/txtCritica2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_sucesso"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCritica2"
+                app:layout_constraintStart_toEndOf="@+id/imgCritica2"
+                app:layout_constraintTop_toTopOf="@+id/imgCritica2" />
+
+            <TextView
+                android:id="@+id/txtCritica1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_legenda_retorno"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCritica1"
+                app:layout_constraintStart_toEndOf="@+id/imgCritica1"
+                app:layout_constraintTop_toTopOf="@+id/imgCritica1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/santral_regular"
+            android:text="@string/txt_label_legendas"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutCritica" />
+
+        <TextView
+            android:id="@+id/labelTituloLegendas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/santral_bold"
+            android:text="@string/txt_label_legendas"
+            android:textColor="@color/cor_txt_pedidos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <ImageView
+                android:id="@+id/imgLegenda5"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_legenda_telemarketing"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgLegenda4" />
+
+            <ImageView
+                android:id="@+id/imgLegenda4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_legenda_devolucao"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgLegenda3" />
+
+            <ImageView
+                android:id="@+id/imgLegenda3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_legenda_cancelamento"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgLegenda2" />
+
+            <ImageView
+                android:id="@+id/imgLegenda2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_legenda_falta"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgLegenda1" />
+
+            <ImageView
+                android:id="@+id/imgLegenda1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_critica"
+                android:src="@drawable/ic_maxima_legenda_corte"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtLegenda5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_label_telemarketing"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgLegenda5"
+                app:layout_constraintStart_toEndOf="@+id/imgLegenda5"
+                app:layout_constraintTop_toTopOf="@+id/imgLegenda5" />
+
+            <TextView
+                android:id="@+id/txtLegenda4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_label_devolucao"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgLegenda4"
+                app:layout_constraintStart_toEndOf="@+id/imgLegenda4"
+                app:layout_constraintTop_toBottomOf="@+id/imgLegenda3" />
+
+            <TextView
+                android:id="@+id/txtLegenda3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_label_pedido_cancelado"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgLegenda3"
+                app:layout_constraintStart_toEndOf="@+id/imgLegenda3"
+                app:layout_constraintTop_toTopOf="@+id/imgLegenda3" />
+
+            <TextView
+                android:id="@+id/txtLegenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_pedido_falta"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgLegenda2"
+                app:layout_constraintStart_toEndOf="@+id/imgLegenda2"
+                app:layout_constraintTop_toTopOf="@+id/imgLegenda2" />
+
+            <TextView
+                android:id="@+id/txtLegenda1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_label_pedido_corte"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgLegenda1"
+                app:layout_constraintStart_toEndOf="@+id/imgLegenda1"
+                app:layout_constraintTop_toTopOf="@+id/imgLegenda1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

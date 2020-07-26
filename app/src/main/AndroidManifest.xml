@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.pauloc.maxapp">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.pauloc.maxApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/networks"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="br.com.pauloc.maxApp.UI.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="br.com.pauloc.maxApp.UI.WorkActivity"
+            android:parentActivityName="br.com.pauloc.maxApp.UI.MainActivity" />
+        <activity android:name="br.com.pauloc.maxApp.UI.MainActivity" />
+
+        <service
+            android:name = "br.com.pauloc.maxApp.commons.servicos.NotificationService"
+            android:label = "@string/app_name" >
+            <intent-filter>
+                <action
+                    android:name = ".commons.servicos.NotificationService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

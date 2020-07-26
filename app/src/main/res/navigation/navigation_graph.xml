@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/dadosDoClienteFragment">
+    <fragment
+        android:id="@+id/dadosDoClienteFragment"
+        android:name="br.com.pauloc.maxApp.UI.fragments.dadoscliente.DadosDoClienteFragment"
+        android:label="DadosDoClienteFragment"
+        tools:layout="@layout/fragment_dados_do_cliente"/>
+    <fragment
+        android:id="@+id/historicoDePedidosFragment"
+        android:name="br.com.pauloc.maxApp.UI.fragments.historicoped.HistoricoDePedidosFragment"
+        android:label="HistoricoDePedidosFragment" >
+        <action
+            android:id="@+id/action_historicoDePedidosFragment_to_dialogLegendas"
+            app:destination="@id/dialogLegendas" />
+    </fragment>
+    <fragment
+        android:id="@+id/alvaraFragment"
+        android:name="br.com.pauloc.maxApp.UI.fragments.alvaras.AlvaraFragment"
+        android:label="AlvaraFragment" />
+    <dialog
+        android:id="@+id/dialogLegendas"
+        android:name="br.com.pauloc.maxApp.UI.fragments.dlglegendas.DialogLegendas"
+        android:label="DialogLegendas" />
+</navigation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgSemResultados"
+        android:layout_width="184dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="138dp"
+        android:contentDescription="@string/txt_content_sem_alvara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maxima_empty_state" />
+
+    <TextView
+        android:id="@+id/labelRespostaMaior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/santral_bold"
+        android:text="@string/txt_nada_encontrado_pt1"
+        android:textColor="@color/cor_txt_alvara"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSemResultados" />
+
+    <TextView
+        android:id="@+id/labelRespostaMenor"
+        android:layout_width="263dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/santral_regular"
+        android:gravity="center"
+        android:text="@string/txt_nada_encontrado_pt2"
+        android:textColor="@color/cor_txt_alvara"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelRespostaMaior"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#186096</color>
+    <color name="colorPrimaryDark">#00386C</color>
+    <color name="colorAccent">#638735</color>
+    <color name="cor_txt_btn_menuprincipal">#232323</color>
+    <color name="cor_txt_bar_ativo">#FFFFFF</color>
+    <color name="cor_txt_bar_inativo">#95B6CF</color>
+    <color name="cor_txt_label_pedidos">#95989A</color>
+    <color name="cor_txt_pedidos">#000000</color>
+    <color name="cor_status_pendente">#606060</color>
+    <color name="cor_status_em_processamento">#95989A</color>
+    <color name="cor_status_recusado">#FF9900</color>
+    <color name="cor_status_bloqueado">#3557AA</color>
+    <color name="cor_status_liberado">#186096</color>
+    <color name="cor_status_montado">#7FAA33</color>
+    <color name="cor_status_faturado">#64863B</color>
+    <color name="cor_status_cancelado">#E40613</color>
+    <color name="cor_status_em_orcamento">#2D3E4E</color>
+    <color name="cor_fundo_tela_card">#F1F1F1</color>
+    <color name="cor_fundo_card">#FFFFFF</color>
+    <color name="cor_txt_label_cliente">#95989A</color>
+    <color name="cor_txt_cliente">#000000</color>
+    <color name="cor_txt_alvara">#3E3E3E</color>
+
 </resources>

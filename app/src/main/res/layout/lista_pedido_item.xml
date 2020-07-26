@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImgPedido"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#95989A"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgTipoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@color/cor_status_montado"
+                android:contentDescription="@string/txt_img_pedido"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtTipoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cor_status_cancelado"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="C"
+                android:visibility="gone"
+                android:textColor="@color/cor_txt_bar_ativo"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/labelNumeroPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/cardImgPedido"
+            android:text="@string/txt_label_num_ped"
+            android:textColor="@color/cor_txt_label_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/labelNumeroCliente"
+            app:layout_constraintStart_toEndOf="@+id/cardImgPedido"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelNumeroCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelNumeroPedido"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/cardImgPedido"
+            android:text="@string/txt_label_cliente"
+            android:textColor="@color/cor_txt_label_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtStatusPedido"
+            app:layout_constraintStart_toEndOf="@+id/cardImgPedido"
+            app:layout_constraintTop_toBottomOf="@+id/labelNumeroPedido" />
+
+        <TextView
+            android:id="@+id/txtStatusPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardImgPedido"
+            app:layout_constraintTop_toBottomOf="@+id/labelNumeroCliente" />
+
+        <TextView
+            android:id="@+id/txtNumeroPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/labelNumeroPedido"
+            app:layout_constraintStart_toEndOf="@+id/labelNumeroPedido" />
+
+        <TextView
+            android:id="@+id/txtNumeroCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/labelNumeroCliente"
+            app:layout_constraintStart_toEndOf="@+id/labelNumeroCliente" />
+
+        <TextView
+            android:id="@+id/labelCritica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="96dp"
+            android:text="Crítica"
+            android:textColor="@color/cor_txt_label_pedidos"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtStatusPedido"
+            app:layout_constraintEnd_toStartOf="@+id/txtValor"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgTipoCritica"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/txt_img_pedido"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/labelCritica"
+            app:layout_constraintTop_toBottomOf="@+id/txtNumeroCliente"
+            app:srcCompat="@drawable/ic_maxima_critica_sucesso"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/txt_valor_exemplo"
+            android:textColor="@color/cor_txt_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/labelCritica"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDataHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/cor_txt_label_pedidos"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtNumeroPedido"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgLegenda"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/txt_img_pedido"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/txtValor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDataHora"
+            app:srcCompat="@drawable/ic_maxima_legenda_corte"
+            tools:visibility="visible" />
+
+        <!-- Barra de separação-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardImgPedido" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

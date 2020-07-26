@@ -1,10 +1,34 @@
 <resources>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextoMenuPrincipal">
+        <item name="android:textColor">@color/cor_txt_btn_menuprincipal</item>
+        <item name="android:fontFamily">@font/santral_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LabelDadosCliente">
+        <item name="android:textColor">@color/cor_txt_label_cliente</item>
+        <item name="android:fontFamily">@font/santral_regular</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextoDadosCliente">
+        <item name="android:textColor">@color/cor_txt_cliente</item>
+        <item name="android:fontFamily">@font/santral_regular</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>

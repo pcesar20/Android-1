@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtNomeContato"
+        style="@style/TextoDadosCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/santral_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parteUmDados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgCelular"
+                android:layout_width="16dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_contato"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/txtCelular"
+                app:layout_constraintStart_toEndOf="@+id/txtCelular"
+                app:layout_constraintTop_toTopOf="@+id/txtCelular"
+                app:srcCompat="@drawable/ic_maxima_telefone"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgTelefone"
+                android:layout_width="16dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_contato"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/txtTelefone"
+                app:layout_constraintStart_toEndOf="@+id/txtTelefone"
+                app:layout_constraintTop_toTopOf="@+id/txtTelefone"
+                app:srcCompat="@drawable/ic_maxima_telefone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/labelContatoTelefone"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_telefone"
+                app:layout_constraintBottom_toTopOf="@+id/labelContatoCelular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelContatoCelular"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_celular"
+                app:layout_constraintBottom_toTopOf="@+id/labelConjugue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelContatoTelefone" />
+
+            <TextView
+                android:id="@+id/labelConjugue"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_conjugue"
+                app:layout_constraintBottom_toTopOf="@+id/labelContatoTipo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelContatoCelular" />
+
+            <TextView
+                android:id="@+id/labelContatoTipo"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_tipo"
+                app:layout_constraintBottom_toTopOf="@+id/labelHobbie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelConjugue" />
+
+            <TextView
+                android:id="@+id/labelHobbie"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_hobbie"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelContatoTipo" />
+
+            <TextView
+                android:id="@+id/txtTelefone"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelContatoTelefone"
+                app:layout_constraintStart_toEndOf="@+id/labelContatoTelefone" />
+
+            <TextView
+                android:id="@+id/txtCelular"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelContatoCelular"
+                app:layout_constraintStart_toEndOf="@+id/labelContatoCelular" />
+
+            <TextView
+                android:id="@+id/txtNomeConjugue"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelConjugue"
+                app:layout_constraintStart_toEndOf="@+id/labelConjugue" />
+
+            <TextView
+                android:id="@+id/txtTipo"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelContatoTipo"
+                app:layout_constraintStart_toEndOf="@+id/labelContatoTipo" />
+
+            <TextView
+                android:id="@+id/txtHobbie"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelHobbie"
+                app:layout_constraintStart_toEndOf="@+id/labelHobbie" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parteDoisDados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgEmail"
+                android:layout_width="16dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/txt_img_contato"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
+                app:layout_constraintStart_toEndOf="@+id/txtEmail"
+                app:layout_constraintTop_toTopOf="@+id/txtEmail"
+                app:srcCompat="@drawable/ic_maxima_email"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/labelEmail"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelDataNasc"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_nasc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+            <TextView
+                android:id="@+id/labelDataNascConjugue"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_nasc_conjugue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelDataNasc" />
+
+            <TextView
+                android:id="@+id/labelTime"
+                style="@style/LabelDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_label_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelDataNascConjugue" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelEmail"
+                app:layout_constraintStart_toEndOf="@+id/labelEmail" />
+
+            <TextView
+                android:id="@+id/txtDataNascimento"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelDataNasc"
+                app:layout_constraintStart_toEndOf="@+id/labelDataNasc" />
+
+            <TextView
+                android:id="@+id/txtDataNascConjugue"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelDataNascConjugue"
+                app:layout_constraintStart_toEndOf="@+id/labelDataNascConjugue" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                style="@style/TextoDadosCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_nao_informado"
+                app:layout_constraintBaseline_toBaselineOf="@+id/labelTime"
+                app:layout_constraintStart_toEndOf="@+id/labelTime" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</LinearLayout>

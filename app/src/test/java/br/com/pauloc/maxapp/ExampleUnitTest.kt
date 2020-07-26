@@ -1,4 +1,4 @@
-package br.com.pauloc.maxapp
+package br.com.pauloc.maxApp
 
 import org.junit.Test
 
