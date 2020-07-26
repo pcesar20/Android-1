@@ -1,4 +1,4 @@
-package br.com.pauloc.maxApp.UI
+package br.com.pauloc.maxapp.UI
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.net.NetworkInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.pauloc.maxApp.R
+import br.com.pauloc.maxApp.UI.WorkActivity
 import br.com.pauloc.maxApp.commons.servicos.Notificacao
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         }
         verificarInternet(this)
         stopService(Intent(this,Notificacao::class.java))
+
     }
 
     override fun onResume() {

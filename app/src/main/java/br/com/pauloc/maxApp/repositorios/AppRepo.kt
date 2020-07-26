@@ -1,4 +1,4 @@
-package br.com.pauloc.maxApp.repositorios
+package br.com.pauloc.maxapp.repositorios
 
 import android.content.Context
 import br.com.pauloc.maxApp.API.ApiSrvc
