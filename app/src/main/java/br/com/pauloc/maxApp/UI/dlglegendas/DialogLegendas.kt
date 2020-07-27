@@ -12,7 +12,7 @@ import org.jetbrains.anko.layoutInflater
 
 class DialogLegendas : AppCompatDialogFragment() {
 
-    lateinit var customView: View;
+    lateinit var customView: View
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return customView

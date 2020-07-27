@@ -13,7 +13,7 @@ class Converters {
 
     @TypeConverter
     fun jsonToList(json: String): List<String>?{
-        val lista = Gson().fromJson(json, Array<String>::class.java) as? Array<String>
+        val lista = Gson().fromJson(json, Array<String>::class.java)
         return lista?.toList()
     }
 
@@ -29,7 +29,7 @@ class Converters {
     @TypeConverter
     fun jsonToContatos(json: String): List<Contato>?{
         val gson = GsonBuilder().serializeNulls().create()
-        val lista = gson.fromJson(json, Array<Contato>::class.java) as? Array<Contato>
+        val lista = gson.fromJson(json, Array<Contato>::class.java)
         return lista?.toList()
     }
 

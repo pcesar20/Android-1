@@ -1,4 +1,5 @@
-package br.com.pauloc.maxapp.commons.servicos;
+package br.com.pauloc.maxApp.commons.servicos;
+
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
@@ -6,8 +7,6 @@ import android.os.IBinder;
 import android.util.Log;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import br.com.pauloc.maxApp.commons.servicos.Notificacao;
 
 public class NotificacaoService extends Service {
     Timer timer ;
@@ -52,8 +51,8 @@ public class NotificacaoService extends Service {
             public void run(){
                 handler .post(new Runnable(){
                     public void run(){
-                        Notificacao notification = new Notificacao();
-                        notification.createNotification( getApplicationContext(),"Volte para o MaxApp","Toque para abrir",true);
+                        Notificacao notificacao = new Notificacao();
+                        notificacao.createNotification( getApplicationContext(),"Volte para o MaxApp","Toque para abrir",true);
                     }
                 }) ;
             }

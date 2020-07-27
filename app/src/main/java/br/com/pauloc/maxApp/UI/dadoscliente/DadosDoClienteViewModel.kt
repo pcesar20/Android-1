@@ -2,7 +2,7 @@ package br.com.pauloc.maxApp.UI.fragments.dadoscliente
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import br.com.pauloc.maxapp.repositorios.AppRepo
+import br.com.pauloc.maxApp.repositorios.AppRepo
 
 class DadosDoClienteViewModel(application: Application): AndroidViewModel(application){
 

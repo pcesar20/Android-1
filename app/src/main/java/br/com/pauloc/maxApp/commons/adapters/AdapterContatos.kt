@@ -5,9 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.modelos.Contato
-import java.text.SimpleDateFormat
+import br.com.pauloc.maxApp.R
+
 
 
 class AdapterContatos(val dataSet: List<Contato>) : RecyclerView.Adapter<AdapterContatos.ViewHolder>() {
@@ -25,13 +25,13 @@ class AdapterContatos(val dataSet: List<Contato>) : RecyclerView.Adapter<Adapter
         val contatoAtual = dataSet[position]
 
         holder.textoNome.text = contatoAtual.nome
-        holder.textoTelefone.text = contatoAtual?.telefone
-        holder.textoCelular.text = contatoAtual?.celular
-        holder.textoConjugue.text = contatoAtual?.conjuge
-        holder.textoTipo.text = contatoAtual?.tipo
-        holder.textoEmail.text = contatoAtual?.e_mail
-        holder.textoNascimento.text = contatoAtual.data_nascimento;
-        holder.textoNascConjugue.text = contatoAtual.dataNascimentoConjuge;
+        holder.textoTelefone.text = contatoAtual.telefone
+        holder.textoCelular.text = contatoAtual.celular
+        holder.textoConjugue.text = contatoAtual.conjuge
+        holder.textoTipo.text = contatoAtual.tipo
+        holder.textoEmail.text = contatoAtual.e_mail
+        holder.textoNascimento.text = contatoAtual.data_nascimento
+        holder.textoNascConjugue.text = contatoAtual.dataNascimentoConjuge
         holder.textoTime.text = contatoAtual.time
     }
 

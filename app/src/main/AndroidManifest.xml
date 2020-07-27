@@ -27,11 +27,11 @@
         </activity>
         <activity
             android:name="br.com.pauloc.maxApp.UI.WorkActivity"
-            android:parentActivityName="br.com.pauloc.maxApp.br.com.pauloc.maxapp.UI.MainActivity" />
-        <activity android:name="br.com.pauloc.maxApp.br.com.pauloc.maxapp.UI.MainActivity" />
+            android:parentActivityName="br.com.pauloc.maxApp.UI.activitys.MainActivity" />
+        <activity android:name="br.com.pauloc.maxApp.UI.activitys.MainActivity" />
 
         <service
-            android:name = "br.com.pauloc.maxApp.commons.servicos.NotificationService"
+            android:name = "br.com.pauloc.maxApp.commons.servicos.NotificacaoService"
             android:label = "@string/app_name" >
             <intent-filter>
                 <action

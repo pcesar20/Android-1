@@ -1,4 +1,4 @@
-package br.com.pauloc.maxapp.UI
+package br.com.pauloc.maxApp.UI.activitys
 
 import android.content.Context
 import android.content.Intent
@@ -6,8 +6,8 @@ import android.net.ConnectivityManager
 import android.net.NetworkInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.UI.WorkActivity
+import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.commons.servicos.Notificacao
 import kotlinx.android.synthetic.main.activity_main.*
 

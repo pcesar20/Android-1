@@ -9,8 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.modelos.Pedido
 import org.jetbrains.anko.backgroundResource
-import java.text.SimpleDateFormat
-import java.util.*
 
 class AdapterPedidos(val dataSet: List<Pedido>) :
     RecyclerView.Adapter<AdapterPedidos.ViewHolder>() {

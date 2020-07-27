@@ -9,9 +9,9 @@ import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.commons.adapters.AdapterContatos
 import br.com.pauloc.maxApp.modelos.Cliente
+import br.com.pauloc.maxApp.R
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_dados_do_cliente.*
 import java.text.SimpleDateFormat

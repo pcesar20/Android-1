@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import br.com.pauloc.maxApp.R
 import br.com.pauloc.maxApp.commons.adapters.AdapterPedidos
+import br.com.pauloc.maxApp.R
 import kotlinx.android.synthetic.main.fragment_historico_de_pedidos.*
 
 class HistoricoDePedidosFragment: Fragment(){

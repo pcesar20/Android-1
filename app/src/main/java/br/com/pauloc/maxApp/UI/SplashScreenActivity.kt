@@ -1,11 +1,12 @@
 package br.com.pauloc.maxApp.UI
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 import br.com.pauloc.maxApp.R
-import br.com.pauloc.maxapp.UI.MainActivity
+import br.com.pauloc.maxApp.UI.activitys.MainActivity
+
 
 class SplashScreenActivity : AppCompatActivity() {
 
