@@ -7,6 +7,7 @@ import retrofit2.http.GET
 object ApiSrvc {
 
     var URL = "http://maximatech.free.beeceptor.com/android/"
+
     @GET("cliente")
 
     private fun getRetrofit(): Retrofit {

@@ -11,6 +11,7 @@ interface EndPoint {
         get() = "http://maximatech.free.beeceptor.com/android/"
         set(value) = TODO()
 
+
     @GET("cliente")
     fun getClientInfo(): Call<Cliente>
 
